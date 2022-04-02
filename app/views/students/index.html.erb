@@ -1,0 +1,14 @@
+<h1>obegeek</h1>
+<h3>学生情報</h3>
+
+<%= form_for @student do |f| %>
+    <div class="field">
+        <%= f.label :body %>
+        <%= f.text_field :body, :size => 140 %>
+    </div>
+    <%= f.submit "input" %>
+<% end %>
+<%= link_to "一覧に戻る", tweets_path %>
+
+
+<%= link_to "新規投稿ページへ", students__path %>
